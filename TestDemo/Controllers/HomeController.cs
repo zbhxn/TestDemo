@@ -11,7 +11,7 @@ namespace TestDemo.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            ViewData["DataMsg"]= "TestDemoViewData";
+            ViewData["DataMsg"] = "TestDemoViewData";
             ViewBag.BagMsg = "TestDemoViewBag";
             return View();
         }
