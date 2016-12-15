@@ -1,8 +1,8 @@
-﻿
+﻿@using System.Data
+
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
 
 <html>
@@ -11,12 +11,34 @@
     <title>Index</title>
 </head>
 <body>
-    <div> 
+    <div>
         @ViewData["DataMsg"]   &nbsp;&nbsp;&nbsp;
         @ViewBag.DataMsg
-        <hr/>
+        <hr />
         @ViewData["BagMsg"]   &nbsp;&nbsp;&nbsp;
         @ViewBag.BagMsg
+        <hr />
+        <table border="1" style="border-collapse:collapse">
+            <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>密码</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    DataTable dt = (DataTable)ViewData["dt"];
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        <tr>
+                            <td>@dt.Rows[i]["UserName"]</td>
+                            <td>@dt.Rows[i]["PassWord"]</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
     </div>
 </body>
 </html>

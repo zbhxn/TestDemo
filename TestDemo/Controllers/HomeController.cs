@@ -10,24 +10,26 @@ namespace TestDemo.Controllers
 {
     public class HomeController : Controller
     {
-        private string connStr =
-            "Data Source=waadqpivah.database.chinacloudapi.cn;Initial Catalog=zbhxn_DataBase;Persist Security Info=True;User ID=zbhxn;Password=3edc#EDC";
+        private string connStr = "Data Source=waadqpivah.database.chinacloudapi.cn;Initial Catalog=zbhxn_DataBase;Persist Security Info=True;User ID=zbhxn;Password=3edc#EDC";
         // GET: Home
         public ActionResult Index()
         {
             DataSet ds = new DataSet();
-            using (SqlConnection conn=new SqlConnection(connStr))
+            using (SqlConnection conn = new SqlConnection(connStr))
             {
                 conn.Open();
                 string sqlcmd = "SELECT * FROM dbo.userInfo";
-                using (SqlCommand cmd = new SqlCommand(sqlcmd,conn))
+                using (SqlCommand cmd = new SqlCommand(sqlcmd, conn))
                 {
-                    using (SqlDataAdapter adpter=new SqlDataAdapter(cmd))
+                    using (SqlDataAdapter adpter = new SqlDataAdapter(cmd))
                     {
                         adpter.Fill(ds);
                     }
                 }
             }
+
+            ViewData["dt"] = ds.Tables[0];
+    
             ViewData["DataMsg"] = ds.Tables[0].Rows[0]["UserName"];
             ViewBag.BagMsg = ds.Tables[0].Rows[0]["PassWord"];
             return View();
