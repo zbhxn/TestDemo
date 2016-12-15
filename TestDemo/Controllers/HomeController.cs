@@ -34,5 +34,19 @@ namespace TestDemo.Controllers
             ViewBag.BagMsg = ds.Tables[0].Rows[0]["PassWord"];
             return View();
         }
+        public ActionResult InsertData()
+        {
+            string name = Request["name"];
+            string password = Request["password"];
+            using (SqlConnection conn=new SqlConnection(connStr))
+            {
+                conn.Open();
+                string sqlcmd =string.Format("Insert into dbo.userInfo UserName,PassWord values {0}{1}",name,password);
+                using (SqlCommand cmd=new SqlCommand(sqlcmd,conn)
+                {
+
+                }
+            }
+        }
     }
 }
