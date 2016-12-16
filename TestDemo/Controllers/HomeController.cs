@@ -10,6 +10,7 @@ namespace TestDemo.Controllers
 {
     public class HomeController : Controller
     {
+        public static int times = 0;
         private string connStr = "Data Source=waadqpivah.database.chinacloudapi.cn;Initial Catalog=zbhxn_DataBase;Persist Security Info=True;User ID=zbhxn;Password=3edc#EDC";
         // GET: Home
         public ActionResult Index()
@@ -32,6 +33,8 @@ namespace TestDemo.Controllers
 
             ViewData["DataMsg"] = ds.Tables[0].Rows[0]["UserName"];
             ViewBag.BagMsg = ds.Tables[0].Rows[0]["PassWord"];
+
+            ViewData["times"] = times += 1;
             return View();
         }
         public ContentResult InsertData()
