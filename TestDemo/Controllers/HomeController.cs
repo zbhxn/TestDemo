@@ -29,24 +29,41 @@ namespace TestDemo.Controllers
             }
 
             ViewData["dt"] = ds.Tables[0];
-    
+
             ViewData["DataMsg"] = ds.Tables[0].Rows[0]["UserName"];
             ViewBag.BagMsg = ds.Tables[0].Rows[0]["PassWord"];
             return View();
         }
-        public ActionResult InsertData()
+        public ContentResult InsertData()
         {
-            string name = Request["name"];
-            string password = Request["password"];
-            using (SqlConnection conn=new SqlConnection(connStr))
+            string result = "no|添加失败";
+            try
             {
-                conn.Open();
-                string sqlcmd =string.Format("Insert into dbo.userInfo UserName,PassWord values {0}{1}",name,password);
-                using (SqlCommand cmd=new SqlCommand(sqlcmd,conn)
+                string name = Request["name"];
+                string password = Request["password"];
+                using (SqlConnection conn = new SqlConnection(connStr))
                 {
-
+                    conn.Open();
+                    //string sqlcmd = string.Format("insert into zbhxn_DataBase.dbo.userInfo (UserName,PassWord) values (N'{0}',N'{1}')", name, password);
+                    //string sqlcmd = "insert into zbhxn_DataBase.dbo.userInfo (UserName,PassWord) values ('test','1111')";
+                    string sqlcmd = "insert into zbhxn_DataBase.dbo.userInfo (UserName,PassWord) values (@name,@password)";
+                    using (SqlCommand cmd = new SqlCommand(sqlcmd, conn))
+                    {
+                        cmd.Parameters.Add(new SqlParameter("@name", name));
+                        cmd.Parameters.Add(new SqlParameter("@password", password));
+                        int i = cmd.ExecuteNonQuery();
+                        if (i > 0)
+                        {
+                            result = "ok|添加成功";
+                        }
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                return Content("no|" + ex.Message);
+            }
+            return Content(result);
         }
     }
 }

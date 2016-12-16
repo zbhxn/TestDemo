@@ -11,20 +11,31 @@
     <title>Windows Azure Test</title>
     <script src="~/Scripts/jquery-1.8.2.min.js"></script>
     <script>
-        var name=$("#txt1").val();
-        var password=$("#txt2").val();
         $(function () {
-            $.post("/Home/InsertData", {name:name,password:password},function(){
-                alert("添加成功");
+            $("#btn").click(function () {
+                var name = $("#txt1").val();
+                var password = $("#txt2").val();
+
+                $.post("/Home/InsertData", { "name": name, "password": password }, function (data, status, jqxhr) {
+                    var result = data.split('|');
+                    if (result[0] === "ok") {
+                        alert(result[1]);
+                        window.location.href = "/Home/Index";
+                    } else {
+                        alert(result[1]);
+                    }
+                });
             });
         })
     </script>
 </head>
 <body>
     <div>
-        <input type="text" id="txt1" placeholder="请输入用户名" />   <br />
-        <input type="text" id="txt2" placeholder="请输入密码" />     <br />
-        <input type="button" id="btn" value="添加" />
+        <table border="1" style="border-collapse:collapse">
+            <tr><td><input type="text" id="txt1" placeholder="请输入用户名" /></td></tr>
+            <tr><td><input type="text" id="txt2" placeholder="请输入密码" /></td></tr>
+            <tr><td style="text-align:center;"><input type="button" id="btn" value="添加" /></td></tr>
+        </table>
 
         @ViewData["DataMsg"]   &nbsp;&nbsp;&nbsp;
         @ViewBag.DataMsg
@@ -52,7 +63,6 @@
                 }
             </tbody>
         </table>
-
     </div>
 </body>
 </html>
