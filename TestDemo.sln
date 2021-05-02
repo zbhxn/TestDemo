@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NETCoreWebApiDemo", "AS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "String", "String", "{C88F08A1-ADC9-4BD7-A724-761CA908192F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringComparisonDemo", "StringComparisonDemo\StringComparisonDemo.csproj", "{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringComparisonDemo", "StringComparisonDemo\StringComparisonDemo.csproj", "{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enum", "Enum", "{0762DD95-4B0E-4336-A723-656172E8897E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumDemo", "EnumDemo\EnumDemo.csproj", "{FB3B1213-06A3-4C9F-9443-99B3E57B3D45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,10 @@ Global
 		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB3B1213-06A3-4C9F-9443-99B3E57B3D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB3B1213-06A3-4C9F-9443-99B3E57B3D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB3B1213-06A3-4C9F-9443-99B3E57B3D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB3B1213-06A3-4C9F-9443-99B3E57B3D45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{280C2010-C4CF-461F-B318-2A07D334DFA1} = {9E33032D-4A6E-4FE0-928C-346938E49DDF}
 		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A} = {C88F08A1-ADC9-4BD7-A724-761CA908192F}
+		{FB3B1213-06A3-4C9F-9443-99B3E57B3D45} = {0762DD95-4B0E-4336-A723-656172E8897E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D21EC0C4-4980-4E46-A726-9CAA05061822}
