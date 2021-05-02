@@ -11,7 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveShapeDemo", "MoveShapeD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionDemo", "ExpressionDemo\ExpressionDemo.csproj", "{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManagerDemo", "ConfigurationManagerDemo\ConfigurationManagerDemo.csproj", "{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationManagerDemo", "ConfigurationManagerDemo\ConfigurationManagerDemo.csproj", "{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoMapper", "AutoMapper", "{9E33032D-4A6E-4FE0-928C-346938E49DDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NETCoreWebApiDemo", "ASP.NETCoreWebApiDemo\ASP.NETCoreWebApiDemo.csproj", "{280C2010-C4CF-461F-B318-2A07D334DFA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "String", "String", "{C88F08A1-ADC9-4BD7-A724-761CA908192F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringComparisonDemo", "StringComparisonDemo\StringComparisonDemo.csproj", "{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +47,21 @@ Global
 		{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280C2010-C4CF-461F-B318-2A07D334DFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280C2010-C4CF-461F-B318-2A07D334DFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280C2010-C4CF-461F-B318-2A07D334DFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280C2010-C4CF-461F-B318-2A07D334DFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{280C2010-C4CF-461F-B318-2A07D334DFA1} = {9E33032D-4A6E-4FE0-928C-346938E49DDF}
+		{CD6CB646-B5C2-4624-9622-2BAB2B67F41A} = {C88F08A1-ADC9-4BD7-A724-761CA908192F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D21EC0C4-4980-4E46-A726-9CAA05061822}
