@@ -3,14 +3,15 @@ using Owin;
 using System;
 using System.Threading.Tasks;
 
-[assembly: OwinStartup(typeof(SignalRChat.Startup))]
+[assembly: OwinStartup(typeof(_1_SignalRChat.Startup))]
 
-namespace SignalRChat
+namespace _1_SignalRChat
 {
     public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
+            // Any connection or hub wire up and configuration should go here
             app.MapSignalR();
         }
     }
