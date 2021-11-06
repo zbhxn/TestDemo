@@ -1,0 +1,15 @@
+SignalR.Transports.TransportHeartBeat Information: 0 : Connection b536b5b0-4935-44ce-8b9c-9c832f43bc6d is New.
+SignalR.Transports.WebSocketTransport Verbose: 0 : Sending outgoing message. Connection id: b536b5b0-4935-44ce-8b9c-9c832f43bc6d, transport: WebSocketTransport, message: {"C":"d-8FDD081E-B,0|C,0|D,1","S":1,"M":[]}
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.WebSocketTransport Verbose: 0 : Sending outgoing message. Connection id: b536b5b0-4935-44ce-8b9c-9c832f43bc6d, transport: WebSocketTransport, message: {"C":"d-8FDD081E-B,1|C,0|D,1","M":[{"H":"ChatHub","M":"broadcastMessage","A":["灌灌灌灌","饿肚肚"]}]}
+SignalR.Transports.WebSocketTransport Verbose: 0 : Sending outgoing message. Connection id: b536b5b0-4935-44ce-8b9c-9c832f43bc6d, transport: WebSocketTransport, message: {"I":"0"}
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
+SignalR.Transports.TransportHeartBeat Verbose: 0 : KeepAlive(b536b5b0-4935-44ce-8b9c-9c832f43bc6d)
