@@ -3,14 +3,15 @@ using Owin;
 using System;
 using System.Threading.Tasks;
 
-[assembly: OwinStartup(typeof(MoveShapeDemo.Startup))]
+[assembly: OwinStartup(typeof(_3_MoveShapeDemo.Startup))]
 
-namespace MoveShapeDemo
+namespace _3_MoveShapeDemo
 {
     public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
+            // Any connection or hub wire up and configuration should go here
             app.MapSignalR();
         }
     }

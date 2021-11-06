@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionAzureSQL", "ConnectionAzureSQL\ConnectionAzureSQL.csproj", "{12675B40-BE2F-4326-ABAA-CF3BDF37A10E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveShapeDemo", "MoveShapeDemo\MoveShapeDemo.csproj", "{25C09B27-A9E6-49C2-A342-C631A0FF93DE}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionDemo", "ExpressionDemo\ExpressionDemo.csproj", "{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationManagerDemo", "ConfigurationManagerDemo\ConfigurationManagerDemo.csproj", "{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}"
@@ -37,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-SignalRChat", "1-SignalRC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-SignalRMvcChat", "2-SignalRMvcChat\2-SignalRMvcChat.csproj", "{0FD9D2C3-91E4-4D6F-A3E9-8B81335DF219}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-MoveShapeDemo", "3-MoveShapeDemo\3-MoveShapeDemo.csproj", "{46A00652-F831-46C8-9195-F46931D96035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +47,6 @@ Global
 		{12675B40-BE2F-4326-ABAA-CF3BDF37A10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12675B40-BE2F-4326-ABAA-CF3BDF37A10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12675B40-BE2F-4326-ABAA-CF3BDF37A10E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25C09B27-A9E6-49C2-A342-C631A0FF93DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25C09B27-A9E6-49C2-A342-C631A0FF93DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25C09B27-A9E6-49C2-A342-C631A0FF93DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25C09B27-A9E6-49C2-A342-C631A0FF93DE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +83,10 @@ Global
 		{0FD9D2C3-91E4-4D6F-A3E9-8B81335DF219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FD9D2C3-91E4-4D6F-A3E9-8B81335DF219}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FD9D2C3-91E4-4D6F-A3E9-8B81335DF219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46A00652-F831-46C8-9195-F46931D96035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A00652-F831-46C8-9195-F46931D96035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A00652-F831-46C8-9195-F46931D96035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A00652-F831-46C8-9195-F46931D96035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +99,7 @@ Global
 		{C58F2716-EB01-454F-99DE-784B18911866} = {52B2AB8F-AFBD-41A2-9F87-3EC5267EF2EC}
 		{0B855A4F-F0F3-43D7-9FE3-84F9CD8567F3} = {7F2C6222-0D76-4F2C-B0E3-F8751EF92A5F}
 		{0FD9D2C3-91E4-4D6F-A3E9-8B81335DF219} = {7F2C6222-0D76-4F2C-B0E3-F8751EF92A5F}
+		{46A00652-F831-46C8-9195-F46931D96035} = {7F2C6222-0D76-4F2C-B0E3-F8751EF92A5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D21EC0C4-4980-4E46-A726-9CAA05061822}

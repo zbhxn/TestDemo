@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MoveShapeDemo
+namespace _3_MoveShapeDemo
 {
     public class MoveShapeHub : Hub
     {
@@ -19,12 +19,13 @@ namespace MoveShapeDemo
 
     public class ShapeModel
     {
-        //我们使用JsonProperty将Left和Top声明为小写，以同步客户端和服务器模型
+        // We declare Left and Top as lowercase with 
+        // JsonProperty to sync the client and server models
         [JsonProperty("left")]
         public double Left { get; set; }
         [JsonProperty("top")]
         public double Top { get; set; }
-        //我们不希望客户端获取“LastUpdatedBy”属性
+        // We don't want the client to get the "LastUpdatedBy" property
         [JsonIgnore]
         public string LastUpdatedBy { get; set; }
     }
