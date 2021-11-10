@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31112.23
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionAzureSQL", "ConnectionAzureSQL\ConnectionAzureSQL.csproj", "{12675B40-BE2F-4326-ABAA-CF3BDF37A10E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionDemo", "ExpressionDemo\ExpressionDemo.csproj", "{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationManagerDemo", "ConfigurationManagerDemo\ConfigurationManagerDemo.csproj", "{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}"
 EndProject
@@ -37,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-SignalRMvcChat", "2-Signa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-MoveShapeDemo", "3-MoveShapeDemo\3-MoveShapeDemo.csproj", "{46A00652-F831-46C8-9195-F46931D96035}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7-Expression", "7-Expression", "{CF50EDF5-CEDD-40D0-AF7E-76F7690A5BB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +47,6 @@ Global
 		{12675B40-BE2F-4326-ABAA-CF3BDF37A10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12675B40-BE2F-4326-ABAA-CF3BDF37A10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12675B40-BE2F-4326-ABAA-CF3BDF37A10E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C961CFD7-BBF7-4CE4-92A3-5C73951D554B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{090A1B99-2705-4F9E-B5F1-BB9DB4DADFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
